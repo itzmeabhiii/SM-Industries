@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM INDUSTRIES | Manufacturers of Hose End Fittings</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Load Font Awesome for crisp industrial, social, and UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            950: '#061B38',
+                            900: '#0A2E5C',
+                            800: '#0F3D75',
+                            700: '#164E92',
+                            600: '#1E62B5',
+                        },
+                        gold: {
+                            400: '#FACC15',
+                            500: '#EAB308',
+                            600: '#CA8A04',
+                        },
+                        cyanaccent: {
+                            400: '#38BDF8',
+                            500: '#0EA5E9',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased selection:bg-navy-900 selection:text-gold-400 flex flex-col min-h-screen">
+
+    <!-- ==========================================
+         1. TOP UTILITY BAR (#0A2E5C)
+    =========================================== -->
+    <div class="bg-navy-900 text-white text-xs border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <!-- Left: Location, Phone, Email -->
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1 text-slate-200">
+                <span class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-400"></i>
+                    <span>Faridabad, Haryana, India</span>
+                </span>
+                <span class="hidden md:inline text-white/30">|</span>
+                <a href="tel:+919876543210" class="flex items-center gap-1.5 hover:text-gold-400 transition-colors">
+                    <i class="fa-solid fa-phone text-gold-400"></i>
+                    <span>+91-98765 43210</span>
+                </a>
+                <span class="hidden md:inline text-white/30">|</span>
+                <a href="mailto:info@smindustries.in" class="flex items-center gap-1.5 hover:text-gold-400 transition-colors">
+                    <i class="fa-solid fa-envelope text-gold-400"></i>
+                    <span>info@smindustries.in</span>
+                </a>
+            </div>
+
+            <!-- Right: Italic Tagline & LinkedIn Icon -->
+            <div class="flex items-center gap-3">
+                <span class="italic font-medium text-slate-100 tracking-wide">Engineering Quality. Manufacturing Precision.</span>
+                <span class="text-white/30">|</span>
+                <a href="#contact" aria-label="SM Industries LinkedIn" class="w-5 h-5 rounded bg-white text-navy-900 hover:bg-gold-400 hover:text-navy-950 flex items-center justify-center transition-colors">
+                    <i class="fa-brands fa-linkedin-in text-[11px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         2. MAIN HEADER & NAVIGATION
+    =========================================== -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 gap-2">
+                <!-- Left: Custom SVG 'SM' Emblem inside Blue/Cyan Ring + SM INDUSTRIES -->
+                <a href="#home" class="flex items-center gap-3 shrink-0 group focus:outline-none">
+                    <div class="w-12 h-12 shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform">
+                        <svg class="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Outer Cyan & Navy Orbital Swoosh Ring -->
+                            <path d="M52 20C47.5 11.5 38.5 6 28 6C14.7 6 4 16.7 4 30C4 43.3 14.7 54 28 54C39.2 54 48.6 46.4 51.2 36" stroke="#0EA5E9" stroke-width="3.5" stroke-linecap="round"/>
+                            <path d="M12 16C17.5 9.5 26 6 35 7.5C47.5 9.5 56 21 54.5 33.5" stroke="#0A2E5C" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="18 6"/>
+                            <!-- Bold Interlocking 'SM' Monogram -->
+                            <text x="11" y="40" fill="#0A2E5C" font-family="Inter, sans-serif" font-weight="900" font-size="25" letter-spacing="-1.5">SM</text>
+                            <!-- Precision Hex Accent Dot -->
+                            <circle cx="53" cy="27" r="3" fill="#0EA5E9"/>
+                        </svg>
+                    </div>
+                    <div class="leading-tight">
+                        <div class="text-navy-900 font-black text-lg sm:text-xl tracking-tight">SM INDUSTRIES</div>
+                        <div class="text-[11px] sm:text-xs font-medium text-slate-600">Manufacturers of Hose End Fittings</div>
+                    </div>
+                </a>
+
+                <!-- Center Nav (Desktop) -->
+                <nav class="hidden xl:flex items-center space-x-1">
+                    <a href="#home" class="px-3.5 py-2 rounded-lg bg-navy-900 text-white text-xs font-bold shadow-2xs transition-colors">Home</a>
+                    <a href="#about" class="px-3 py-2 rounded-lg text-slate-700 hover:text-navy-900 hover:bg-slate-100 text-xs font-semibold transition-colors">About Us</a>
+                    
+                    <!-- Products Dropdown -->
+                    <div class="relative group">
+                        <a href="#products" class="px-3 py-2 rounded-lg text-slate-700 hover:text-navy-900 hover:bg-slate-100 text-xs font-semibold transition-colors inline-flex items-center gap-1">
+                            <span>Products</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] text-slate-500 group-hover:rotate-180 transition-transform"></i>
+                        </a>
+                        <div class="absolute left-0 mt-1 w-56 rounded-xl bg-white shadow-xl border border-slate-200 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                            <a href="#products" class="block px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">Hose End Fittings</a>
+                            <a href="#products" class="block px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">Hydraulic Fittings</a>
+                            <a href="#products" class="block px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">Special / Custom Fittings</a>
+                            <a href="#products" class="block px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">CNC Machined Components</a>
+                            <a href="#products" class="block px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 hover:text-navy-900">OEM Components</a>
+                        </div>
+                    </div>
+
+                    <a href="#manufacturing" class="px-3 py-2 rounded-lg text-slate-700 hover:text-navy-900 hover:bg-slate-100 text-xs font-semibold transition-colors">Manufacturing</a>
+                    <a href="#quality" class="px-3 py-2 rounded-lg text-slate-700 hover:text-navy-900 hover:bg-slate-100 text-xs font-semibold transition-colors">Quality</a>
+                    <a href="#industries" class="px-3 py-2 rounded-lg text-slate-700 hover:text-navy-900 hover:bg-slate-100 text-xs font-semibold transition-colors">Industries</a>
+                    <a href="#catalogue" class="px-3 py-2 rounded-lg text-slate-700 hover:text-navy-900 hover:bg-slate-100 text-xs font-semibold transition-colors">Catalogue</a>
+                    <a href="#contact" class="px-3 py-2 rounded-lg text-slate-700 hover:text-navy-900 hover:bg-slate-100 text-xs font-semibold transition-colors">Contact Us</a>
+                </nav>
+
+                <!-- Right CTAs: Get a Quote & Leave a Query -->
+                <div class="hidden sm:flex items-center gap-2 shrink-0">
+                    <button type="button" data-open-query class="px-4 py-2.5 rounded-full bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold shadow-sm transition-all flex items-center gap-1.5 cursor-pointer">
+                        <i class="fa-solid fa-paper-plane text-gold-400"></i>
+                        <span>Get a Quote</span>
+                    </button>
+                    <button type="button" data-open-query class="px-4 py-2.5 rounded-full bg-gold-400 hover:bg-gold-500 text-navy-950 text-xs font-extrabold shadow-sm transition-all flex items-center gap-1.5 cursor-pointer">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>Leave a Query</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Hamburger Toggle -->
+                <div class="xl:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" class="text-navy-900 p-2.5 rounded-xl hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-navy-900">
+                        <i class="fa-solid fa-bars text-xl" id="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile / Tablet Collapsible Navigation Drawer -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-1.5 shadow-xl">
+            <a href="#home" class="mobile-link block px-4 py-2.5 rounded-xl text-sm font-bold bg-navy-900 text-white">Home</a>
+            <a href="#about" class="mobile-link block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">About Us</a>
+            <a href="#products" class="mobile-link block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">Products</a>
+            <a href="#manufacturing" class="mobile-link block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">Manufacturing</a>
+            <a href="#quality" class="mobile-link block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">Quality</a>
+            <a href="#industries" class="mobile-link block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">Industries</a>
+            <a href="#catalogue" class="mobile-link block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">Catalogue</a>
+            <a href="#contact" class="mobile-link block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50">Contact Us</a>
+            <div class="pt-3 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <button type="button" data-open-query class="w-full bg-navy-900 text-white font-bold text-sm px-4 py-3 rounded-full flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-gold-400"></i>
+                    <span>Get a Quote</span>
+                </button>
+                <button type="button" data-open-query class="w-full bg-gold-400 text-navy-950 font-extrabold text-sm px-4 py-3 rounded-full flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span>Leave a Query</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- ==========================================
+             3. HERO BANNER (SLANTED NAVY + METALLIC HOSE END FITTINGS SHOWCASE)
+        =========================================== -->
+        <section id="home" class="relative bg-gradient-to-r from-navy-950 via-navy-900 to-slate-800 text-white overflow-hidden border-b-4 border-navy-900">
+            <!-- Subtle CNC Shop Floor Architectural Backdrop Lines -->
+            <div class="absolute inset-0 opacity-15 pointer-events-none" style="background-image: linear-gradient(to right, #38bdf8 1px, transparent 1px), linear-gradient(to bottom, #38bdf8 1px, transparent 1px); background-size: 44px 44px;"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-12 sm:py-16 lg:py-20">
+                    
+                    <!-- Left Navy Gradient Panel: Headline, Yellow Accent & Dual CTAs -->
+                    <div class="lg:col-span-6 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-cyanaccent-400 text-xs font-semibold tracking-wide">
+                            <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+                            ISO 9001:2015 Certified Hose Fittings Manufacturer
+                        </div>
+
+                        <div class="space-y-1">
+                            <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-white leading-tight tracking-tight">
+                                Precision Manufacturer of
+                                <span class="block text-gold-400 font-black text-4xl sm:text-5xl lg:text-[54px] mt-1 tracking-tight">
+                                    Hose End Fittings
+                                </span>
+                            </h1>
+                            <!-- Signature Yellow Accent Bar -->
+                            <div class="w-28 h-1.5 bg-gold-400 rounded-full pt-0.5"></div>
+                        </div>
+
+                        <p class="text-base sm:text-lg text-slate-200 leading-relaxed max-w-xl">
+                            Reliable manufacturing solutions engineered for performance, precision and durability.
+                        </p>
+
+                        <!-- Action Buttons: Yellow 'View Products →' & Outlined WhatsApp 'Send Enquiry' -->
+                        <div class="flex flex-wrap items-center gap-4 pt-2">
+                            <a href="#products" class="px-6 py-3.5 rounded-xl bg-gold-400 hover:bg-gold-500 text-navy-950 font-extrabold text-sm sm:text-base shadow-lg shadow-black/25 transition-all transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+                                <span>View Products</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                            <button type="button" data-open-query class="px-6 py-3.5 rounded-xl bg-navy-950/60 hover:bg-white/15 text-white border border-white/40 hover:border-white font-semibold text-sm sm:text-base backdrop-blur-xs transition-all inline-flex items-center gap-2.5 cursor-pointer">
+                                <span class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm shadow-xs">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </span>
+                                <span>Send Enquiry</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Showcase: Photorealistic-Style Precision Stainless Steel Hose End Fittings, 90° Elbows & Hex Nuts -->
+                    <div class="lg:col-span-6">
+                        <div class="relative rounded-2xl bg-gradient-to-b from-slate-700/70 via-slate-800/85 to-slate-900/95 border border-white/15 p-5 sm:p-7 shadow-2xl overflow-hidden">
+                            <!-- Diagonal Blue Glass Accent Divider -->
+                            <div class="absolute -left-10 top-0 bottom-0 w-16 bg-cyanaccent-500/20 -skew-x-12 pointer-events-none"></div>
+
+                            <!-- CNC Workshop Machine Silhouettes in Background -->
+                            <svg class="w-full h-auto drop-shadow-2xl" viewBox="0 0 620 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Precision Stainless Steel Hose End Fittings, 90-Degree Elbows, and Hex Couplings">
+                                <defs>
+                                    <!-- Brushed Stainless Steel Gradients -->
+                                    <linearGradient id="ssCyl" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#64748B"/>
+                                        <stop offset="22%" stop-color="#F8FAFC"/>
+                                        <stop offset="48%" stop-color="#94A3B8"/>
+                                        <stop offset="78%" stop-color="#E2E8F0"/>
+                                        <stop offset="100%" stop-color="#475569"/>
+                                    </linearGradient>
+                                    <linearGradient id="ssHoriz" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#475569"/>
+                                        <stop offset="25%" stop-color="#F8FAFC"/>
+                                        <stop offset="55%" stop-color="#94A3B8"/>
+                                        <stop offset="82%" stop-color="#E2E8F0"/>
+                                        <stop offset="100%" stop-color="#334155"/>
+                                    </linearGradient>
+                                    <linearGradient id="benchSurface" x1="0" y1="265" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#94A3B8"/>
+                                        <stop offset="35%" stop-color="#CBD5E1"/>
+                                        <stop offset="100%" stop-color="#475569"/>
+                                    </linearGradient>
+                                    <radialGradient id="boreDark" cx="50%" cy="50%" r="50%">
+                                        <stop offset="0%" stop-color="#0F172A"/>
+                                        <stop offset="100%" stop-color="#334155"/>
+                                    </radialGradient>
+                                </defs>
+
+                                <!-- Blurred CNC Machine Center Backdrop -->
+                                <g opacity="0.25">
+                                    <rect x="20" y="25" width="160" height="220" rx="8" fill="#1E293B" stroke="#94A3B8"/>
+                                    <rect x="40" y="55" width="90" height="65" rx="4" fill="#38BDF8"/>
+                                    <rect x="210" y="18" width="195" height="230" rx="8" fill="#1E293B" stroke="#94A3B8"/>
+                                    <rect x="430" y="30" width="170" height="215" rx="8" fill="#1E293B" stroke="#94A3B8"/>
+                                    <rect x="460" y="65" width="75" height="55" rx="4" fill="#38BDF8"/>
+                                </g>
+
+                                <!-- Brushed Steel Workbench Surface -->
+                                <rect x="0" y="265" width="620" height="75" fill="url(#benchSurface)"/>
+                                <line x1="0" y1="265" x2="620" y2="265" stroke="#F8FAFC" stroke-width="2" opacity="0.7"/>
+
+                                <!-- Contact Shadows under Parts -->
+                                <ellipse cx="310" cy="285" rx="265" ry="16" fill="#0F172A" opacity="0.45"/>
+
+                                <!-- PART 1 (Back Tall 90-Degree Swept Elbow Fitting) -->
+                                <g>
+                                    <!-- Vertical Stem -->
+                                    <rect x="268" y="110" width="46" height="165" rx="4" fill="url(#ssCyl)" stroke="#475569" stroke-width="1.2"/>
+                                    <!-- Crimp Ferrule Grooves -->
+                                    <rect x="265" y="165" width="52" height="10" rx="2" fill="url(#ssCyl)" stroke="#334155"/>
+                                    <rect x="265" y="185" width="52" height="10" rx="2" fill="url(#ssCyl)" stroke="#334155"/>
+                                    <rect x="265" y="205" width="52" height="10" rx="2" fill="url(#ssCyl)" stroke="#334155"/>
+                                    <!-- Swept 90-Degree Bend -->
+                                    <path d="M268 115 C268 58, 305 38, 365 38 L398 38 L398 82 L362 82 C330 82, 314 94, 314 115 Z" fill="url(#ssHoriz)" stroke="#475569" stroke-width="1.2"/>
+                                    <!-- Swivel Nut Collar -->
+                                    <rect x="382" y="30" width="38" height="60" rx="5" fill="url(#ssHoriz)" stroke="#334155" stroke-width="1.5"/>
+                                    <line x1="382" y1="45" x2="420" y2="45" stroke="#334155" stroke-width="1.5"/>
+                                    <line x1="382" y1="75" x2="420" y2="75" stroke="#334155" stroke-width="1.5"/>
+                                    <!-- Open Threaded Bore -->
+                                    <ellipse cx="420" cy="60" rx="10" ry="26" fill="url(#boreDark)" stroke="#E2E8F0" stroke-width="2"/>
+                                </g>
+
+                                <!-- PART 2 (Tall Straight Hydraulic Hose Barb & Hex Adapter - Right Center) -->
+                                <g>
+                                    <!-- Bottom Male Threads -->
+                                    <rect x="442" y="205" width="44" height="72" rx="3" fill="url(#ssCyl)" stroke="#475569"/>
+                                    <g stroke="#334155" stroke-width="1.5">
+                                        <line x1="442" y1="215" x2="486" y2="218"/>
+                                        <line x1="442" y1="224" x2="486" y2="227"/>
+                                        <line x1="442" y1="233" x2="486" y2="236"/>
+                                        <line x1="442" y1="242" x2="486" y2="245"/>
+                                        <line x1="442" y1="251" x2="486" y2="254"/>
+                                        <line x1="442" y1="260" x2="486" y2="263"/>
+                                    </g>
+                                    <!-- Center Heavy Hex Nut -->
+                                    <rect x="430" y="162" width="68" height="43" rx="5" fill="url(#ssCyl)" stroke="#334155" stroke-width="1.5"/>
+                                    <line x1="448" y1="162" x2="448" y2="205" stroke="#334155" stroke-width="1.5"/>
+                                    <line x1="480" y1="162" x2="480" y2="205" stroke="#334155" stroke-width="1.5"/>
+                                    <!-- Upper Hose Tail Barbs -->
+                                    <rect x="446" y="82" width="36" height="80" rx="3" fill="url(#ssCyl)" stroke="#475569"/>
+                                    <polygon points="442,102 486,102 482,92 446,92" fill="url(#ssCyl)" stroke="#475569"/>
+                                    <polygon points="442,120 486,120 482,110 446,110" fill="url(#ssCyl)" stroke="#475569"/>
+                                    <polygon points="442,138 486,138 482,128 446,128" fill="url(#ssCyl)" stroke="#475569"/>
+                                </g>
+
+                                <!-- PART 3 (Foreground Left Angled Hose End Swivel Fitting) -->
+                                <g transform="rotate(-24 135 225)">
+                                    <rect x="62" y="205" width="130" height="36" rx="4" fill="url(#ssHoriz)" stroke="#475569" stroke-width="1.2"/>
+                                    <!-- Swivel Hex Collar -->
+                                    <rect x="115" y="196" width="34" height="54" rx="4" fill="url(#ssHoriz)" stroke="#334155" stroke-width="1.5"/>
+                                    <!-- Left Open Coupling Mouth -->
+                                    <ellipse cx="62" cy="223" rx="9" ry="18" fill="url(#boreDark)" stroke="#F8FAFC" stroke-width="2"/>
+                                    <!-- Right Barb Tail -->
+                                    <rect x="192" y="210" width="38" height="26" rx="3" fill="url(#ssHoriz)" stroke="#475569"/>
+                                </g>
+
+                                <!-- PART 4 (Center Compact Hex Nipple Coupling) -->
+                                <g>
+                                    <rect x="332" y="176" width="42" height="98" rx="3" fill="url(#ssCyl)" stroke="#475569"/>
+                                    <!-- Thread Ridges -->
+                                    <g stroke="#334155" stroke-width="1.4">
+                                        <line x1="332" y1="185" x2="374" y2="187"/>
+                                        <line x1="332" y1="193" x2="374" y2="195"/>
+                                        <line x1="332" y1="201" x2="374" y2="203"/>
+                                        <line x1="332" y1="245" x2="374" y2="247"/>
+                                        <line x1="332" y1="253" x2="374" y2="255"/>
+                                        <line x1="332" y1="261" x2="374" y2="263"/>
+                                    </g>
+                                    <!-- Center Hex -->
+                                    <rect x="323" y="210" width="60" height="30" rx="4" fill="url(#ssCyl)" stroke="#334155" stroke-width="1.5"/>
+                                    <line x1="338" y1="210" x2="338" y2="240" stroke="#334155"/>
+                                    <line x1="368" y1="210" x2="368" y2="240" stroke="#334155"/>
+                                </g>
+
+                                <!-- PART 5 (Right Foreground Heavy Stainless Hex Nut) -->
+                                <g>
+                                    <polygon points="525,212 565,198 598,218 598,266 565,286 525,272" fill="url(#ssCyl)" stroke="#334155" stroke-width="1.8"/>
+                                    <ellipse cx="566" cy="242" rx="18" ry="22" fill="url(#boreDark)" stroke="#E2E8F0" stroke-width="2.5"/>
+                                </g>
+                            </svg>
+
+                            <!-- Caption Strip -->
+                            <div class="mt-2 pt-2.5 border-t border-white/15 flex items-center justify-between text-xs text-slate-200">
+                                <span class="font-semibold"><i class="fa-solid fa-check-circle text-gold-400 mr-1.5"></i>BSP / JIC / Metric / NPT Standards</span>
+                                <span class="text-gold-400 font-bold">SS304 &bull; SS316 &bull; Carbon Steel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. ROW 2: ABOUT & PRODUCTS SPLIT SECTION
+        =========================================== -->
+        <section class="py-12 sm:py-16 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    
+                    <!-- Left Column: About SM Industries (5 cols) -->
+                    <div id="about" class="lg:col-span-5 space-y-4">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                            About <span class="text-navy-700">SM Industries</span>
+                        </h2>
+
+                        <p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
+                            SM Industries is an industrial manufacturing company specializing in the manufacturing of <a href="#products" class="text-navy-700 font-semibold underline decoration-navy-700/40 hover:decoration-navy-700">hose end fittings</a> and precision components. We focus on consistent quality, dimensional accuracy and reliable delivery for industrial and OEM applications.
+                        </p>
+
+                        <div class="pt-1 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                            <a href="#manufacturing" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs sm:text-sm shadow-sm transition-all shrink-0 self-start">
+                                <span>Know More</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                            <!-- Clean Architectural Factory Facility Illustration -->
+                            <div class="w-full sm:w-64 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-sky-50">
+                                <svg class="w-full h-auto block" viewBox="0 0 320 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SM Industries Manufacturing Facility">
+                                    <!-- Sky & Clouds -->
+                                    <rect width="320" height="150" fill="#E0F2FE"/>
+                                    <circle cx="52" cy="30" r="14" fill="#FFFFFF" opacity="0.85"/>
+                                    <circle cx="66" cy="32" r="11" fill="#FFFFFF" opacity="0.85"/>
+                                    <circle cx="265" cy="26" r="12" fill="#FFFFFF" opacity="0.8"/>
+
+                                    <!-- Perspective Modern Factory Building -->
+                                    <polygon points="35,58 215,32 215,126 35,126" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.2"/>
+                                    <polygon points="215,32 292,54 292,126 215,126" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.2"/>
+                                    <!-- Roof Trim -->
+                                    <polygon points="30,58 215,28 296,53 215,35" fill="#0A2E5C"/>
+
+                                    <!-- Bold Building Signboard: SM INDUSTRIES -->
+                                    <g transform="skewY(-7)">
+                                        <rect x="85" y="56" width="118" height="18" rx="2" fill="#0A2E5C"/>
+                                        <text x="91" y="69" fill="#FFFFFF" font-family="Inter, sans-serif" font-weight="900" font-size="11" letter-spacing="0.4">SM INDUSTRIES</text>
+                                    </g>
+
+                                    <!-- Industrial Windows & Loading Bay -->
+                                    <g fill="#38BDF8" opacity="0.75">
+                                        <rect x="52" y="74" width="24" height="12" rx="1"/>
+                                        <rect x="84" y="70" width="24" height="12" rx="1"/>
+                                        <rect x="116" y="66" width="24" height="12" rx="1"/>
+                                        <rect x="148" y="62" width="24" height="12" rx="1"/>
+                                        <rect x="52" y="94" width="24" height="12" rx="1"/>
+                                        <rect x="84" y="90" width="24" height="12" rx="1"/>
+                                    </g>
+                                    <!-- Loading Roller Door -->
+                                    <rect x="135" y="92" width="44" height="34" fill="#64748B"/>
+                                    <line x1="135" y1="100" x2="179" y2="100" stroke="#CBD5E1" stroke-width="1"/>
+                                    <line x1="135" y1="108" x2="179" y2="108" stroke="#CBD5E1" stroke-width="1"/>
+                                    <line x1="135" y1="116" x2="179" y2="116" stroke="#CBD5E1" stroke-width="1"/>
+
+                                    <!-- Paved Road & Perimeter Fence -->
+                                    <rect x="0" y="126" width="320" height="24" fill="#64748B"/>
+                                    <line x1="0" y1="126" x2="320" y2="126" stroke="#1E293B" stroke-width="2"/>
+                                    <!-- Green Landscaping Tree -->
+                                    <circle cx="255" cy="108" r="16" fill="#15803D"/>
+                                    <circle cx="246" cy="112" r="11" fill="#16A34A"/>
+                                    <rect x="253" y="120" width="4" height="8" fill="#78350F"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Our Products (7 cols with 5 Bordered Cards) -->
+                    <div id="products" class="lg:col-span-7 lg:border-l lg:border-slate-200 lg:pl-8 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                                Our <span class="text-navy-700">Products</span>
+                            </h2>
+                            <button type="button" data-open-query class="text-xs font-bold text-navy-700 hover:text-navy-900 underline cursor-pointer">
+                                Request Custom Spec &rarr;
+                            </button>
+                        </div>
+
+                        <!-- 5 Clean Bordered Product Cards -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-3">
+                            
+                            <!-- Product 1: Hose End Fittings -->
+                            <div data-open-query class="group bg-white rounded-xl border border-slate-200 hover:border-navy-700 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between overflow-hidden cursor-pointer">
+                                <div class="p-3 bg-slate-50/70 flex items-center justify-center h-28">
+                                    <svg class="w-20 h-20 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+                                        <path d="M22 72 L45 72 C58 72, 66 64, 66 50 L66 28 L82 28 L82 52 C82 74, 68 86, 45 86 L22 86 Z" fill="#94A3B8" stroke="#334155" stroke-width="1.5"/>
+                                        <rect x="14" y="68" width="14" height="22" rx="2" fill="#CBD5E1" stroke="#334155" stroke-width="1.5"/>
+                                        <rect x="61" y="18" width="26" height="14" rx="2" fill="#E2E8F0" stroke="#334155" stroke-width="1.5"/>
+                                    </svg>
+                                </div>
+                                <div class="bg-slate-100 group-hover:bg-navy-900 group-hover:text-white transition-colors px-2 py-2.5 text-center border-t border-slate-200">
+                                    <span class="block text-xs font-bold leading-snug">Hose End<br>Fittings</span>
+                                </div>
+                            </div>
+
+                            <!-- Product 2: Hydraulic Fittings -->
+                            <div data-open-query class="group bg-white rounded-xl border border-slate-200 hover:border-navy-700 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between overflow-hidden cursor-pointer">
+                                <div class="p-3 bg-slate-50/70 flex items-center justify-center h-28">
+                                    <svg class="w-20 h-20 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+                                        <path d="M20 74 L38 74 C52 74, 62 62, 62 46 L62 24 L78 24 L78 48 C78 72, 62 88, 38 88 L20 88 Z" fill="#CBD5E1" stroke="#334155" stroke-width="1.5"/>
+                                        <rect x="34" y="70" width="12" height="22" rx="2" fill="#64748B" stroke="#1E293B"/>
+                                        <rect x="58" y="34" width="24" height="10" rx="2" fill="#64748B" stroke="#1E293B"/>
+                                    </svg>
+                                </div>
+                                <div class="bg-slate-100 group-hover:bg-navy-900 group-hover:text-white transition-colors px-2 py-2.5 text-center border-t border-slate-200">
+                                    <span class="block text-xs font-bold leading-snug">Hydraulic<br>Fittings</span>
+                                </div>
+                            </div>
+
+                            <!-- Product 3: Special / Custom Fittings -->
+                            <div data-open-query class="group bg-white rounded-xl border border-slate-200 hover:border-navy-700 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between overflow-hidden cursor-pointer">
+                                <div class="p-3 bg-slate-50/70 flex items-center justify-center h-28">
+                                    <svg class="w-20 h-20 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+                                        <g transform="rotate(-30 50 50)">
+                                            <rect x="14" y="38" width="72" height="24" rx="3" fill="#94A3B8" stroke="#334155" stroke-width="1.5"/>
+                                            <rect x="36" y="32" width="28" height="36" rx="4" fill="#E2E8F0" stroke="#334155" stroke-width="1.5"/>
+                                            <line x1="22" y1="38" x2="22" y2="62" stroke="#334155"/>
+                                            <line x1="28" y1="38" x2="28" y2="62" stroke="#334155"/>
+                                            <line x1="72" y1="38" x2="72" y2="62" stroke="#334155"/>
+                                            <line x1="78" y1="38" x2="78" y2="62" stroke="#334155"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="bg-slate-100 group-hover:bg-navy-900 group-hover:text-white transition-colors px-2 py-2.5 text-center border-t border-slate-200">
+                                    <span class="block text-xs font-bold leading-snug">Special / Custom<br>Fittings</span>
+                                </div>
+                            </div>
+
+                            <!-- Product 4: CNC Machined Components -->
+                            <div data-open-query class="group bg-white rounded-xl border border-slate-200 hover:border-navy-700 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between overflow-hidden cursor-pointer">
+                                <div class="p-3 bg-slate-50/70 flex items-center justify-center h-28">
+                                    <svg class="w-20 h-20 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+                                        <g transform="rotate(-25 50 50)">
+                                            <rect x="16" y="36" width="68" height="28" rx="4" fill="#CBD5E1" stroke="#334155" stroke-width="1.5"/>
+                                            <rect x="42" y="30" width="22" height="40" rx="3" fill="#94A3B8" stroke="#1E293B" stroke-width="1.5"/>
+                                            <line x1="22" y1="36" x2="22" y2="64" stroke="#334155"/>
+                                            <line x1="28" y1="36" x2="28" y2="64" stroke="#334155"/>
+                                            <line x1="34" y1="36" x2="34" y2="64" stroke="#334155"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="bg-slate-100 group-hover:bg-navy-900 group-hover:text-white transition-colors px-2 py-2.5 text-center border-t border-slate-200">
+                                    <span class="block text-xs font-bold leading-snug">CNC Machined<br>Components</span>
+                                </div>
+                            </div>
+
+                            <!-- Product 5: OEM Components -->
+                            <div data-open-query class="col-span-2 sm:col-span-1 group bg-white rounded-xl border border-slate-200 hover:border-navy-700 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between overflow-hidden cursor-pointer">
+                                <div class="p-3 bg-slate-50/70 flex items-center justify-center h-28">
+                                    <svg class="w-20 h-20 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+                                        <polygon points="26,34 50,22 74,34 74,66 50,78 26,66" fill="#CBD5E1" stroke="#334155" stroke-width="1.8"/>
+                                        <ellipse cx="50" cy="36" rx="14" ry="8" fill="#1E293B" stroke="#F8FAFC" stroke-width="1.5"/>
+                                        <line x1="50" y1="44" x2="50" y2="78" stroke="#475569" stroke-width="1.4"/>
+                                    </svg>
+                                </div>
+                                <div class="bg-slate-100 group-hover:bg-navy-900 group-hover:text-white transition-colors px-2 py-2.5 text-center border-t border-slate-200">
+                                    <span class="block text-xs font-bold leading-snug">OEM<br>Components</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             5. ROW 3: 3-COLUMN FEATURE STRIP (MANUFACTURING, QUALITY, INDUSTRIES)
+        =========================================== -->
+        <section class="py-10 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                    
+                    <!-- Card 1: Our Manufacturing (Dark Navy CNC Machining Card) -->
+                    <div id="manufacturing" class="lg:col-span-4 rounded-2xl bg-gradient-to-br from-navy-950 via-navy-900 to-slate-900 text-white p-6 shadow-md border border-navy-800 relative overflow-hidden flex flex-col justify-between">
+                        <!-- Subtle CNC Spindle Graphic Accent on Left -->
+                        <div class="absolute -left-6 bottom-0 opacity-20 pointer-events-none">
+                            <svg class="w-40 h-40" viewBox="0 0 140 140" fill="none">
+                                <rect x="20" y="10" width="44" height="50" rx="4" fill="#38BDF8"/>
+                                <polygon points="32,60 52,60 44,95 40,95" fill="#FACC15"/>
+                                <circle cx="42" cy="98" r="24" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4"/>
+                                <rect x="10" y="100" width="85" height="24" rx="4" fill="#94A3B8"/>
+                            </svg>
+                        </div>
+
+                        <div class="relative z-10 space-y-3">
+                            <h3 class="text-xl font-extrabold tracking-tight text-white">Our Manufacturing</h3>
+                            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                                State-of-the-art CNC machines for precision manufacturing.
+                            </p>
+                            <ul class="space-y-2 pt-1 text-xs sm:text-sm font-medium">
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-gold-400"></i>
+                                    <span>CNC Machining</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-gold-400"></i>
+                                    <span>Turning &amp; Threading</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-gold-400"></i>
+                                    <span>Finishing &amp; Assembly</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="relative z-10 pt-5">
+                            <button type="button" data-open-query class="px-5 py-2 rounded-full bg-gold-400 hover:bg-gold-500 text-navy-950 font-extrabold text-xs shadow-sm transition-all inline-flex items-center gap-1.5 cursor-pointer">
+                                <span>Our Process</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Our Quality (Deep Blue Card with Shield Checkmark) -->
+                    <div id="quality" class="lg:col-span-4 rounded-2xl bg-gradient-to-br from-navy-800 to-navy-950 text-white p-6 shadow-md border border-navy-700 flex flex-col justify-between">
+                        <div class="flex items-start gap-4">
+                            <!-- Large White Shield Checkmark Icon -->
+                            <div class="w-16 h-16 shrink-0 flex items-center justify-center text-white/95">
+                                <svg class="w-16 h-16" viewBox="0 0 64 64" fill="none">
+                                    <path d="M32 6L10 15V31C10 45.2 19.4 58.3 32 62C44.6 58.3 54 45.2 54 31V15L32 6Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                                    <path d="M22 32L29 39L43 25" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="space-y-2.5">
+                                <h3 class="text-xl font-extrabold tracking-tight">Our Quality</h3>
+                                <p class="text-xs text-slate-200 leading-relaxed">
+                                    Quality is built into every component.
+                                </p>
+                                <ul class="space-y-1.5 text-xs sm:text-[13px] font-medium pt-0.5">
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-white"></i>
+                                        <span>Dimensional Inspection</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-white"></i>
+                                        <span>Material Verification</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-white"></i>
+                                        <span>Thread Inspection</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fa-solid fa-circle-check text-white"></i>
+                                        <span>Final Quality Check</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="pt-5 flex justify-center sm:justify-end">
+                            <button type="button" data-open-query class="px-5 py-2 rounded-full bg-gold-400 hover:bg-gold-500 text-navy-950 font-extrabold text-xs shadow-sm transition-all inline-flex items-center gap-1.5 cursor-pointer">
+                                <span>Quality Assurance</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Industries We Serve (Light Industrial Backdrop with 5 Circular Navy Badges) -->
+                    <div id="industries" class="lg:col-span-4 rounded-2xl bg-gradient-to-b from-white to-slate-200/80 p-6 shadow-md border border-slate-200 flex flex-col justify-between relative overflow-hidden">
+                        <div>
+                            <h3 class="text-xl font-extrabold text-navy-900 tracking-tight">Industries We Serve</h3>
+                            <p class="text-xs text-slate-600 mt-1">Trusted precision fittings across heavy-duty sectors.</p>
+                        </div>
+
+                        <!-- 5 Circular Navy Icon Badges -->
+                        <div class="grid grid-cols-5 gap-2 py-5 text-center">
+                            <div class="flex flex-col items-center gap-2 group">
+                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
+                                    <i class="fa-solid fa-car text-lg"></i>
+                                </div>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Automotive</span>
+                            </div>
+
+                            <div class="flex flex-col items-center gap-2 group">
+                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
+                                    <i class="fa-solid fa-oil-can text-lg"></i>
+                                </div>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Hydraulics</span>
+                            </div>
+
+                            <div class="flex flex-col items-center gap-2 group">
+                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
+                                    <i class="fa-solid fa-tractor text-lg"></i>
+                                </div>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Agriculture</span>
+                            </div>
+
+                            <div class="flex flex-col items-center gap-2 group">
+                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
+                                    <i class="fa-solid fa-truck-monster text-lg"></i>
+                                </div>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Construction Equipment</span>
+                            </div>
+
+                            <div class="flex flex-col items-center gap-2 group">
+                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
+                                    <i class="fa-solid fa-gears text-lg"></i>
+                                </div>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Industrial Machinery</span>
+                            </div>
+                        </div>
+
+                        <div class="text-[11px] font-semibold text-navy-800 border-t border-slate-300/70 pt-2.5 flex justify-between items-center">
+                            <span>Custom OEM Supply Programs</span>
+                            <button type="button" data-open-query class="hover:underline font-bold cursor-pointer">Enquire &rarr;</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             6. ROW 4: BOTTOM ACTION GRID (CATALOGUE, CONTACT US, SEND US AN ENQUIRY)
+        =========================================== -->
+        <section class="pb-12 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                    
+                    <!-- Card 1: Download Our Catalogue (4 cols) -->
+                    <div id="catalogue" class="lg:col-span-4 rounded-2xl bg-white p-6 shadow-md border border-slate-200 flex items-center justify-between gap-4 relative overflow-hidden">
+                        <div class="space-y-3 z-10 max-w-[60%]">
+                            <h3 class="text-lg sm:text-xl font-extrabold text-navy-900 leading-tight">Download Our Catalogue</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Get detailed product information, specifications and drawings.
+                            </p>
+                            <div class="pt-1">
+                                <button type="button" id="open-catalogue-btn" class="px-4 py-2.5 rounded-lg bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs shadow-sm transition-all inline-flex items-center gap-2 cursor-pointer">
+                                    <span>Download Now</span>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Tilted 'SM INDUSTRIES Product Catalogue' Booklet Graphic -->
+                        <div class="w-28 sm:w-32 shrink-0 transform -rotate-12 translate-y-2 shadow-xl rounded-lg border border-slate-300 bg-gradient-to-b from-slate-50 to-slate-200 p-2.5 text-center">
+                            <div class="bg-navy-900 text-white text-[9px] font-black py-1 px-1.5 rounded-t tracking-tight">
+                                SM INDUSTRIES
+                            </div>
+                            <div class="text-[8px] font-bold text-slate-700 py-1 border-b border-slate-300">
+                                Product Catalogue
+                            </div>
+                            <div class="py-2 flex justify-center">
+                                <svg class="w-16 h-16" viewBox="0 0 80 80" fill="none">
+                                    <rect x="14" y="25" width="14" height="42" rx="2" fill="#64748B"/>
+                                    <rect x="33" y="16" width="14" height="51" rx="2" fill="#94A3B8"/>
+                                    <rect x="52" y="28" width="14" height="39" rx="2" fill="#475569"/>
+                                    <rect x="12" y="38" width="18" height="8" rx="1" fill="#E2E8F0"/>
+                                    <rect x="31" y="32" width="18" height="10" rx="1" fill="#F8FAFC"/>
+                                </svg>
+                            </div>
+                            <div class="text-[7px] font-semibold text-navy-900">2026 Technical Edition</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Contact Us + Faridabad Map Preview (4 cols) -->
+                    <div id="contact" class="lg:col-span-4 rounded-2xl bg-white p-6 shadow-md border border-slate-200 flex flex-col justify-between gap-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+                            <!-- Address, Phone, Email -->
+                            <div class="sm:col-span-6 space-y-2.5">
+                                <h3 class="text-lg sm:text-xl font-extrabold text-navy-900">Contact Us</h3>
+                                <div class="space-y-2 text-xs text-slate-700">
+                                    <div class="flex items-start gap-2">
+                                        <i class="fa-solid fa-location-dot text-navy-900 mt-0.5"></i>
+                                        <div>
+                                            <strong class="block text-slate-900">SM INDUSTRIES</strong>
+                                            <span>Faridabad, Haryana, India</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-phone text-navy-900"></i>
+                                        <a href="tel:+919876543210" class="font-semibold hover:text-navy-700">+91-98765 43210</a>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-envelope text-navy-900"></i>
+                                        <a href="mailto:info@smindustries.in" class="font-semibold hover:text-navy-700 break-all">info@smindustries.in</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Stylized Faridabad Map Preview with 'SM Industries' Pin -->
+                            <div class="sm:col-span-6">
+                                <div class="relative rounded-xl border border-slate-300 overflow-hidden bg-amber-50/70 shadow-2xs">
+                                    <svg class="w-full h-28 block" viewBox="0 0 220 120" fill="none">
+                                        <rect width="220" height="120" fill="#F3F4F6"/>
+                                        <!-- Green Park & Industrial Zones -->
+                                        <rect x="12" y="15" width="55" height="40" rx="6" fill="#DCFCE7"/>
+                                        <rect x="140" y="65" width="65" height="42" rx="6" fill="#FEF3C7"/>
+                                        <!-- Highway & Sector Roads -->
+                                        <path d="M0 30 L220 95" stroke="#FCD34D" stroke-width="6"/>
+                                        <path d="M40 120 L155 0" stroke="#FFFFFF" stroke-width="5"/>
+                                        <path d="M0 80 L220 45" stroke="#CBD5E1" stroke-width="3"/>
+                                        <!-- Red Map Location Pin -->
+                                        <path d="M110 24C101.7 24 95 30.7 95 39C95 50.2 110 66 110 66C110 66 125 50.2 125 39C125 30.7 118.3 24 110 24Z" fill="#DC2626"/>
+                                        <circle cx="110" cy="39" r="5" fill="#FFFFFF"/>
+                                        <text x="128" y="42" fill="#B91C1C" font-family="Inter, sans-serif" font-weight="800" font-size="10">SM Industries</text>
+                                        <text x="18" y="40" fill="#15803D" font-family="Inter, sans-serif" font-weight="600" font-size="8">Sector-24 Ind. Area</text>
+                                    </svg>
+                                    <div class="bg-white/95 px-2 py-1.5 border-t border-slate-200 text-center">
+                                        <a href="https://maps.google.com/?q=Faridabad,Haryana,India" target="_blank" rel="noopener noreferrer" class="text-[11px] font-bold text-navy-800 hover:text-navy-950 inline-flex items-center gap-1">
+                                            <span>View on Google Maps</span>
+                                            <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Send Us an Enquiry (Dark Navy Inline Quick Form + Detailed Query Button) (4 cols) -->
+                    <div class="lg:col-span-4 rounded-2xl bg-navy-900 text-white p-6 shadow-md border border-navy-800 flex flex-col justify-between">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg sm:text-xl font-extrabold tracking-tight">Send Us an Enquiry</h3>
+                            <button type="button" data-open-query class="text-[11px] font-bold text-gold-400 hover:underline cursor-pointer">
+                                Full Query Form &nearr;
+                            </button>
+                        </div>
+
+                        <form id="inline-enquiry-form" class="space-y-2.5" novalidate>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                <input type="text" id="quick-name" required placeholder="Your Name *"
+                                    class="w-full px-3 py-2 rounded-lg bg-white text-slate-900 placeholder-slate-500 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-gold-400">
+                                <input type="email" id="quick-email" required placeholder="Your Email *"
+                                    class="w-full px-3 py-2 rounded-lg bg-white text-slate-900 placeholder-slate-500 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-gold-400">
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-end">
+                                <textarea id="quick-message" rows="2" required placeholder="Your Message *"
+                                    class="w-full px-3 py-2 rounded-lg bg-white text-slate-900 placeholder-slate-500 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-gold-400 resize-none"></textarea>
+                                <button type="submit" class="px-4 py-2.5 rounded-lg bg-gold-400 hover:bg-gold-500 text-navy-950 font-extrabold text-xs whitespace-nowrap shadow-sm transition-all inline-flex items-center justify-center gap-1.5 shrink-0 cursor-pointer">
+                                    <span>Submit Enquiry</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <p id="inline-feedback" class="hidden text-[11px] font-semibold text-gold-400 pt-0.5"></p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         7. BOTTOM FOOTER WITH REQUIRED LINKS (ABOUT US, CONTACT US & LEAVE A QUERY BUTTON)
+    =========================================== -->
+    <footer class="bg-navy-950 text-white border-t border-navy-800">
+        <!-- Prominent Bottom Section Links & Leave a Query Bar -->
+        <div class="bg-navy-900/90 border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="text-sm font-extrabold tracking-tight text-white">SM INDUSTRIES</span>
+                    <span class="text-white/30">|</span>
+                    <span class="text-xs text-slate-300">Quick Navigation</span>
+                </div>
+
+                <!-- Required Bottom Links: About Us, Contact Us & Leave a Query Button -->
+                <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-7">
+                    <a href="#about" class="text-sm font-semibold text-slate-100 hover:text-gold-400 transition-colors py-1">
+                        About Us
+                    </a>
+                    <a href="#contact" class="text-sm font-semibold text-slate-100 hover:text-gold-400 transition-colors py-1">
+                        Contact Us
+                    </a>
+                    <button type="button" data-open-query class="px-5 py-2.5 rounded-full bg-gold-400 hover:bg-gold-500 text-navy-950 font-extrabold text-xs sm:text-sm shadow-md transition-all transform hover:-translate-y-0.5 inline-flex items-center gap-2 cursor-pointer">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>Leave a Query</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright, Policy Links & Social Icons -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-300">
+            <p>&copy; <span id="current-year">2026</span> SM Industries. All Rights Reserved.</p>
+
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <a href="#about" class="hover:text-gold-400 transition-colors">Privacy Policy</a>
+                <span class="text-white/30">|</span>
+                <a href="#quality" class="hover:text-gold-400 transition-colors">Terms &amp; Conditions</a>
+                <span class="text-white/30">|</span>
+                <a href="#products" class="hover:text-gold-400 transition-colors">Sitemap</a>
+            </div>
+
+            <div class="flex items-center gap-2.5">
+                <span class="text-slate-300">Follow Us:</span>
+                <a href="#contact" aria-label="LinkedIn" class="w-6 h-6 rounded bg-white text-navy-950 hover:bg-gold-400 flex items-center justify-center transition-colors">
+                    <i class="fa-brands fa-linkedin-in text-xs"></i>
+                </a>
+                <a href="#manufacturing" aria-label="YouTube" class="w-6 h-6 rounded bg-white text-navy-950 hover:bg-gold-400 flex items-center justify-center transition-colors">
+                    <i class="fa-brands fa-youtube text-xs"></i>
+                </a>
+                <a href="#products" aria-label="Pinterest" class="w-6 h-6 rounded bg-white text-navy-950 hover:bg-gold-400 flex items-center justify-center transition-colors">
+                    <i class="fa-brands fa-pinterest-p text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Bottom-Right WhatsApp Quick Action Button (Triggers Query Modal) -->
+    <button type="button" data-open-query aria-label="Leave a Query via WhatsApp / Direct Form" class="fixed bottom-5 right-5 z-40 w-13 h-13 p-3.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl hover:scale-105 transition-all flex items-center justify-center cursor-pointer">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </button>
+
+    <!-- ==========================================
+         8. INTERACTIVE "LEAVE A QUERY" MODAL DIALOG
+            Asks: Name, Email Id, Contact No, Address & Description Box
+    =========================================== -->
+    <div id="query-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <!-- Backdrop -->
+        <div id="modal-backdrop" class="fixed inset-0 bg-navy-950/75 backdrop-blur-xs transition-opacity opacity-0"></div>
+
+        <!-- Modal Dialog Container -->
+        <div class="flex min-h-full items-center justify-center p-4 sm:p-6">
+            <div id="modal-panel" class="relative w-full max-w-xl transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl border border-slate-200 transition-all scale-95 opacity-0">
+                
+                <!-- Modal Header -->
+                <div class="bg-navy-900 text-white px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gold-400 text-navy-950 flex items-center justify-center font-bold shadow-xs">
+                            <i class="fa-solid fa-file-signature text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-extrabold leading-tight" id="modal-title">Leave a Query</h3>
+                            <p class="text-xs text-slate-300">SM Industries &bull; Manufacturers of Hose End Fittings</p>
+                        </div>
+                    </div>
+                    <button type="button" id="close-modal-btn" aria-label="Close modal" class="text-slate-300 hover:text-white p-2 rounded-xl hover:bg-white/10 transition-colors cursor-pointer">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Body: Visitor Query Form -->
+                <div id="query-form-container" class="p-6 sm:p-7">
+                    <form id="query-form" novalidate class="space-y-4">
+                        <!-- 1. Name -->
+                        <div>
+                            <label for="visitor-name" class="block text-xs sm:text-sm font-bold text-slate-800 mb-1">
+                                Name <span class="text-rose-600">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none">
+                                    <i class="fa-solid fa-user text-sm"></i>
+                                </span>
+                                <input type="text" id="visitor-name" name="name" required placeholder="Enter your full name"
+                                    class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-navy-900 transition-all">
+                            </div>
+                            <p class="error-msg hidden text-xs text-rose-600 mt-1 font-medium" id="error-name">Please enter your full name.</p>
+                        </div>
+
+                        <!-- 2. Email Id & 3. Contact No -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Email Id -->
+                            <div>
+                                <label for="visitor-email" class="block text-xs sm:text-sm font-bold text-slate-800 mb-1">
+                                    Email Id <span class="text-rose-600">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none">
+                                        <i class="fa-solid fa-envelope text-sm"></i>
+                                    </span>
+                                    <input type="email" id="visitor-email" name="email" required placeholder="you@company.com"
+                                        class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-navy-900 transition-all">
+                                </div>
+                                <p class="error-msg hidden text-xs text-rose-600 mt-1 font-medium" id="error-email">Please enter a valid Email Id.</p>
+                            </div>
+
+                            <!-- Contact No -->
+                            <div>
+                                <label for="visitor-phone" class="block text-xs sm:text-sm font-bold text-slate-800 mb-1">
+                                    Contact No <span class="text-rose-600">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none">
+                                        <i class="fa-solid fa-phone text-sm"></i>
+                                    </span>
+                                    <input type="tel" id="visitor-phone" name="phone" required placeholder="+91 98765 43210"
+                                        class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-navy-900 transition-all">
+                                </div>
+                                <p class="error-msg hidden text-xs text-rose-600 mt-1 font-medium" id="error-phone">Please enter a valid Contact No.</p>
+                            </div>
+                        </div>
+
+                        <!-- 4. Address -->
+                        <div>
+                            <label for="visitor-address" class="block text-xs sm:text-sm font-bold text-slate-800 mb-1">
+                                Address <span class="text-rose-600">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none">
+                                    <i class="fa-solid fa-location-dot text-sm"></i>
+                                </span>
+                                <input type="text" id="visitor-address" name="address" required placeholder="Company / Street Address, City, State"
+                                    class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-navy-900 transition-all">
+                            </div>
+                            <p class="error-msg hidden text-xs text-rose-600 mt-1 font-medium" id="error-address">Please enter your address.</p>
+                        </div>
+
+                        <!-- 5. Description Box -->
+                        <div>
+                            <label for="visitor-description" class="block text-xs sm:text-sm font-bold text-slate-800 mb-1">
+                                Description <span class="text-rose-600">*</span>
+                            </label>
+                            <textarea id="visitor-description" name="description" rows="4" required placeholder="Write your query here (e.g. Hose End Fittings size, thread type, material grade, quantity)..."
+                                class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-navy-900 transition-all resize-y"></textarea>
+                            <p class="error-msg hidden text-xs text-rose-600 mt-1 font-medium" id="error-description">Please write your query description (at least 10 characters).</p>
+                        </div>
+
+                        <!-- Form Action Buttons -->
+                        <div class="flex flex-col-reverse sm:flex-row justify-end gap-3 pt-2">
+                            <button type="button" id="cancel-query-btn" class="px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 font-bold text-xs sm:text-sm transition-colors cursor-pointer">
+                                Cancel
+                            </button>
+                            <button type="submit" class="px-6 py-2.5 rounded-xl bg-gold-400 hover:bg-gold-500 text-navy-950 font-extrabold text-xs sm:text-sm shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Submit Query</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal Body: Submission Confirmation View -->
+                <div id="query-success-container" class="hidden p-7 sm:p-8 text-center space-y-5">
+                    <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mx-auto">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="space-y-1.5">
+                        <h4 class="text-2xl font-extrabold text-navy-900">Query Submitted Successfully!</h4>
+                        <p class="text-slate-600 text-sm max-w-md mx-auto">
+                            Thank you, <span id="summary-name" class="font-bold text-slate-900"></span>. Our engineering sales team at <strong>SM Industries</strong> has logged your query.
+                        </p>
+                    </div>
+
+                    <!-- Submitted Query Summary Box -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-left text-xs space-y-2 max-w-md mx-auto">
+                        <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                            <span class="font-bold text-slate-500 uppercase tracking-wider">Query Reference ID</span>
+                            <span id="query-ref-id" class="font-mono text-sm font-extrabold text-navy-900">SMI-2026-0000</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <span class="font-semibold text-slate-600">Email Id:</span>
+                            <span id="summary-email" class="col-span-2 text-slate-900 break-all"></span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <span class="font-semibold text-slate-600">Contact No:</span>
+                            <span id="summary-phone" class="col-span-2 text-slate-900"></span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <span class="font-semibold text-slate-600">Address:</span>
+                            <span id="summary-address" class="col-span-2 text-slate-900"></span>
+                        </div>
+                        <div class="pt-1 border-t border-slate-200/80">
+                            <span class="block font-semibold text-slate-600 mb-1">Description:</span>
+                            <p id="summary-description" class="text-slate-800 bg-white p-2.5 rounded-lg border border-slate-200 leading-relaxed max-h-24 overflow-y-auto"></p>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row justify-center gap-3">
+                        <button type="button" id="new-query-btn" class="px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 font-bold text-xs sm:text-sm transition-colors cursor-pointer">
+                            Leave Another Query
+                        </button>
+                        <button type="button" id="done-modal-btn" class="px-7 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs sm:text-sm shadow-sm transition-colors cursor-pointer">
+                            Done
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         PRODUCT CATALOGUE SPECIFICATION PREVIEW MODAL
+    =========================================== -->
+    <div id="catalogue-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="cat-modal-title" role="dialog" aria-modal="true">
+        <div id="cat-backdrop" class="fixed inset-0 bg-navy-950/75 backdrop-blur-xs"></div>
+        <div class="flex min-h-full items-center justify-center p-4">
+            <div class="relative w-full max-w-lg rounded-2xl bg-white shadow-2xl border border-slate-200 overflow-hidden">
+                <div class="bg-navy-900 text-white px-6 py-4 flex items-center justify-between">
+                    <div>
+                        <h3 id="cat-modal-title" class="text-base font-extrabold">SM INDUSTRIES — 2026 Product Catalogue</h3>
+                        <p class="text-xs text-slate-300">Hose End Fittings &amp; Hydraulic Components Specification Sheet</p>
+                    </div>
+                    <button type="button" id="close-cat-btn" class="text-slate-300 hover:text-white p-2 rounded-lg cursor-pointer">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+                <div class="p-6 space-y-4 text-xs text-slate-700">
+                    <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                        <table class="w-full text-left border-collapse">
+                            <thead class="bg-slate-100 text-navy-900 font-bold">
+                                <tr>
+                                    <th class="p-2.5 border-b border-slate-200">Series / Category</th>
+                                    <th class="p-2.5 border-b border-slate-200">Thread Standards</th>
+                                    <th class="p-2.5 border-b border-slate-200">Materials</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200">
+                                <tr>
+                                    <td class="p-2.5 font-semibold">Hose End Fittings (Straight / 45&deg; / 90&deg;)</td>
+                                    <td class="p-2.5">BSP, JIC, NPT, ORFS, Metric</td>
+                                    <td class="p-2.5">SS304, SS316, EN1A</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2.5 font-semibold">Hydraulic High-Pressure Couplings</td>
+                                    <td class="p-2.5">DIN 2353 / ISO 8434-1</td>
+                                    <td class="p-2.5">Carbon Steel / SS316L</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2.5 font-semibold">Special &amp; Custom OEM Fittings</td>
+                                    <td class="p-2.5">As per Customer CAD Drawing</td>
+                                    <td class="p-2.5">Brass, Alloy Steel, SS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex flex-wrap justify-end gap-2.5 pt-2">
+                        <button type="button" id="print-cat-btn" class="px-4 py-2 rounded-lg bg-navy-900 hover:bg-navy-800 text-white font-bold inline-flex items-center gap-1.5 cursor-pointer">
+                            <i class="fa-solid fa-print"></i>
+                            <span>Print / Save Spec Sheet</span>
+                        </button>
+                        <button type="button" id="request-full-cat-btn" class="px-4 py-2 rounded-lg bg-gold-400 hover:bg-gold-500 text-navy-950 font-extrabold inline-flex items-center gap-1.5 cursor-pointer">
+                            <span>Request Full CAD Pack</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         VANILLA JAVASCRIPT INTERACTIVITY
+    =========================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set dynamic year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Mobile Navigation Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function toggleMobileMenu() {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenuIcon.classList.replace('fa-bars', 'fa-xmark');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuIcon.classList.replace('fa-xmark', 'fa-bars');
+                }
+            }
+
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMobileMenu();
+                    }
+                });
+            });
+
+            // "Leave a Query" Modal Elements & Controls
+            const queryModal = document.getElementById('query-modal');
+            const modalBackdrop = document.getElementById('modal-backdrop');
+            const modalPanel = document.getElementById('modal-panel');
+            const openQueryTriggers = document.querySelectorAll('[data-open-query]');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const cancelQueryBtn = document.getElementById('cancel-query-btn');
+            const doneModalBtn = document.getElementById('done-modal-btn');
+            const newQueryBtn = document.getElementById('new-query-btn');
+
+            const queryFormContainer = document.getElementById('query-form-container');
+            const querySuccessContainer = document.getElementById('query-success-container');
+            const queryForm = document.getElementById('query-form');
+
+            const nameInput = document.getElementById('visitor-name');
+            const emailInput = document.getElementById('visitor-email');
+            const phoneInput = document.getElementById('visitor-phone');
+            const addressInput = document.getElementById('visitor-address');
+            const descInput = document.getElementById('visitor-description');
+
+            function resetModalState() {
+                queryForm.reset();
+                document.querySelectorAll('.error-msg').forEach(el => el.classList.add('hidden'));
+                [nameInput, emailInput, phoneInput, addressInput, descInput].forEach(input => {
+                    input.classList.remove('border-rose-500', 'ring-1', 'ring-rose-500');
+                });
+                querySuccessContainer.classList.add('hidden');
+                queryFormContainer.classList.remove('hidden');
+            }
+
+            function openModal(prefill = {}) {
+                resetModalState();
+                if (prefill.name) nameInput.value = prefill.name;
+                if (prefill.email) emailInput.value = prefill.email;
+                if (prefill.description) descInput.value = prefill.description;
+
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
+                queryModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+
+                requestAnimationFrame(() => {
+                    modalBackdrop.classList.remove('opacity-0');
+                    modalBackdrop.classList.add('opacity-100');
+                    modalPanel.classList.remove('scale-95', 'opacity-0');
+                    modalPanel.classList.add('scale-100', 'opacity-100');
+                });
+
+                setTimeout(() => {
+                    if (!nameInput.value) nameInput.focus();
+                    else if (!phoneInput.value) phoneInput.focus();
+                }, 120);
+            }
+
+            function closeModal() {
+                modalBackdrop.classList.remove('opacity-100');
+                modalBackdrop.classList.add('opacity-0');
+                modalPanel.classList.remove('scale-100', 'opacity-100');
+                modalPanel.classList.add('scale-95', 'opacity-0');
+
+                setTimeout(() => {
+                    queryModal.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }, 180);
+            }
+
+            openQueryTriggers.forEach(btn => btn.addEventListener('click', () => openModal()));
+            closeModalBtn.addEventListener('click', closeModal);
+            cancelQueryBtn.addEventListener('click', closeModal);
+            doneModalBtn.addEventListener('click', closeModal);
+            modalBackdrop.addEventListener('click', closeModal);
+
+            newQueryBtn.addEventListener('click', () => {
+                resetModalState();
+                nameInput.focus();
+            });
+
+            // Inline Quick Enquiry Form (bridges to full Leave a Query modal if Contact No/Address are needed)
+            const inlineEnquiryForm = document.getElementById('inline-enquiry-form');
+            const inlineFeedback = document.getElementById('inline-feedback');
+
+            inlineEnquiryForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const qName = document.getElementById('quick-name').value.trim();
+                const qEmail = document.getElementById('quick-email').value.trim();
+                const qMsg = document.getElementById('quick-message').value.trim();
+
+                if (!qName || !qEmail || !qMsg) {
+                    inlineFeedback.textContent = 'Please fill in Your Name, Email, and Message.';
+                    inlineFeedback.classList.remove('hidden');
+                    return;
+                }
+
+                inlineFeedback.classList.add('hidden');
+                inlineEnquiryForm.reset();
+                openModal({
+                    name: qName,
+                    email: qEmail,
+                    description: qMsg
+                });
+            });
+
+            // Catalogue Preview Modal Controls
+            const catalogueModal = document.getElementById('catalogue-modal');
+            const openCatalogueBtn = document.getElementById('open-catalogue-btn');
+            const closeCatBtn = document.getElementById('close-cat-btn');
+            const catBackdrop = document.getElementById('cat-backdrop');
+            const printCatBtn = document.getElementById('print-cat-btn');
+            const requestFullCatBtn = document.getElementById('request-full-cat-btn');
+
+            openCatalogueBtn.addEventListener('click', () => {
+                catalogueModal.classList.remove('hidden');
+            });
+            closeCatBtn.addEventListener('click', () => catalogueModal.classList.add('hidden'));
+            catBackdrop.addEventListener('click', () => catalogueModal.classList.add('hidden'));
+            printCatBtn.addEventListener('click', () => window.print());
+            requestFullCatBtn.addEventListener('click', () => {
+                catalogueModal.classList.add('hidden');
+                openModal({
+                    description: 'Please share the complete 2026 SM Industries Hose End Fittings Product Catalogue & CAD drawings.'
+                });
+            });
+
+            // Escape key support for modals
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    if (!queryModal.classList.contains('hidden')) closeModal();
+                    if (!catalogueModal.classList.contains('hidden')) catalogueModal.classList.add('hidden');
+                }
+            });
+
+            // Validation helper
+            function setFieldError(inputEl, errorElId, hasError) {
+                const errorEl = document.getElementById(errorElId);
+                if (hasError) {
+                    errorEl.classList.remove('hidden');
+                    inputEl.classList.add('border-rose-500', 'ring-1', 'ring-rose-500');
+                } else {
+                    errorEl.classList.add('hidden');
+                    inputEl.classList.remove('border-rose-500', 'ring-1', 'ring-rose-500');
+                }
+            }
+
+            // Full "Leave a Query" Form Validation & Submission
+            queryForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const nameVal = nameInput.value.trim();
+                const emailVal = emailInput.value.trim();
+                const phoneVal = phoneInput.value.trim();
+                const addressVal = addressInput.value.trim();
+                const descVal = descInput.value.trim();
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const phoneDigits = phoneVal.replace(/\D/g, '');
+
+                let isValid = true;
+
+                if (nameVal.length < 2) {
+                    setFieldError(nameInput, 'error-name', true);
+                    isValid = false;
+                } else {
+                    setFieldError(nameInput, 'error-name', false);
+                }
+
+                if (!emailRegex.test(emailVal)) {
+                    setFieldError(emailInput, 'error-email', true);
+                    isValid = false;
+                } else {
+                    setFieldError(emailInput, 'error-email', false);
+                }
+
+                if (phoneDigits.length < 7) {
+                    setFieldError(phoneInput, 'error-phone', true);
+                    isValid = false;
+                } else {
+                    setFieldError(phoneInput, 'error-phone', false);
+                }
+
+                if (addressVal.length < 4) {
+                    setFieldError(addressInput, 'error-address', true);
+                    isValid = false;
+                } else {
+                    setFieldError(addressInput, 'error-address', false);
+                }
+
+                if (descVal.length < 10) {
+                    setFieldError(descInput, 'error-description', true);
+                    isValid = false;
+                } else {
+                    setFieldError(descInput, 'error-description', false);
+                }
+
+                if (!isValid) return;
+
+                // Populate Inquiry Confirmation Summary & Reference ID
+                const randomRef = Math.floor(1000 + Math.random() * 9000);
+                document.getElementById('query-ref-id').textContent = `SMI-${new Date().getFullYear()}-${randomRef}`;
+                document.getElementById('summary-name').textContent = nameVal;
+                document.getElementById('summary-email').textContent = emailVal;
+                document.getElementById('summary-phone').textContent = phoneVal;
+                document.getElementById('summary-address').textContent = addressVal;
+                document.getElementById('summary-description').textContent = descVal;
+
+                queryFormContainer.classList.add('hidden');
+                querySuccessContainer.classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
