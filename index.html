@@ -43,7 +43,7 @@
         }
     </script>
 </head>
-<body class="bg-slate-100 text-slate-800 font-sans antialiased selection:bg-navy-900 selection:text-gold-400 flex flex-col min-h-screen">
+<body class="bg-slate-100 text-slate-800 font-sans antialiased selection:bg-navy-900 selection:text-gold-400 flex flex-col min-h-screen overflow-x-hidden">
 
     <!-- ==========================================
          1. TOP UTILITY BAR (#0A2E5C)
@@ -635,7 +635,7 @@
         </div>
     </section>
 
-    <main id="public-main-content" class="flex-grow">
+    <main id="public-main-content" class="flex-grow min-w-0">
         <!-- ==========================================
              3. HERO BANNER (REALISTIC CNC FACTORY MANUFACTURING HOSE FITTINGS BACKDROP)
         =========================================== -->
@@ -902,53 +902,53 @@
                     </div>
 
                     <!-- Card 3: Industries We Serve (Light Industrial Backdrop with 5 Circular Navy Badges) -->
-                    <div id="industries" class="lg:col-span-4 rounded-2xl bg-gradient-to-b from-white to-slate-200/80 p-6 shadow-md border border-slate-200 flex flex-col justify-between relative overflow-hidden">
+                    <div id="industries" class="lg:col-span-4 min-w-0 rounded-2xl bg-gradient-to-b from-white to-slate-200/80 p-5 sm:p-6 shadow-md border border-slate-200 flex flex-col justify-between relative overflow-hidden">
                         <div>
                             <h3 class="text-xl font-extrabold text-navy-900 tracking-tight">Industries We Serve</h3>
                             <p class="text-xs text-slate-600 mt-1">Trusted precision fittings across heavy-duty sectors.</p>
                         </div>
 
-                        <!-- 5 Circular Navy Icon Badges -->
-                        <div class="grid grid-cols-5 gap-2 py-5 text-center">
-                            <div class="flex flex-col items-center gap-2 group">
-                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
-                                    <i class="fa-solid fa-car text-lg"></i>
+                        <!-- Responsive Badges for Industries We Serve (avoids narrow-pane squishing) -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 py-5 text-center">
+                            <div class="flex flex-col items-center gap-1.5 group min-w-0">
+                                <div class="w-11 h-11 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors shrink-0">
+                                    <i class="fa-solid fa-car text-base"></i>
                                 </div>
-                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Automotive</span>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight break-words">Automotive</span>
                             </div>
 
-                            <div class="flex flex-col items-center gap-2 group">
-                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
-                                    <i class="fa-solid fa-oil-can text-lg"></i>
+                            <div class="flex flex-col items-center gap-1.5 group min-w-0">
+                                <div class="w-11 h-11 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors shrink-0">
+                                    <i class="fa-solid fa-oil-can text-base"></i>
                                 </div>
-                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Hydraulics</span>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight break-words">Hydraulics</span>
                             </div>
 
-                            <div class="flex flex-col items-center gap-2 group">
-                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
-                                    <i class="fa-solid fa-tractor text-lg"></i>
+                            <div class="flex flex-col items-center gap-1.5 group min-w-0">
+                                <div class="w-11 h-11 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors shrink-0">
+                                    <i class="fa-solid fa-tractor text-base"></i>
                                 </div>
-                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Agriculture</span>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight break-words">Agriculture</span>
                             </div>
 
-                            <div class="flex flex-col items-center gap-2 group">
-                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
-                                    <i class="fa-solid fa-truck-monster text-lg"></i>
+                            <div class="flex flex-col items-center gap-1.5 group min-w-0">
+                                <div class="w-11 h-11 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors shrink-0">
+                                    <i class="fa-solid fa-truck-monster text-base"></i>
                                 </div>
-                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Construction Equipment</span>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight break-words">Construction</span>
                             </div>
 
-                            <div class="flex flex-col items-center gap-2 group">
-                                <div class="w-12 h-12 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors">
-                                    <i class="fa-solid fa-gears text-lg"></i>
+                            <div class="col-span-2 sm:col-span-1 flex flex-col items-center gap-1.5 group min-w-0">
+                                <div class="w-11 h-11 rounded-full bg-navy-900 group-hover:bg-navy-700 text-white flex items-center justify-center shadow-sm transition-colors shrink-0">
+                                    <i class="fa-solid fa-gears text-base"></i>
                                 </div>
-                                <span class="text-[11px] font-bold text-slate-800 leading-tight">Industrial Machinery</span>
+                                <span class="text-[11px] font-bold text-slate-800 leading-tight break-words">Industrial Machinery</span>
                             </div>
                         </div>
 
-                        <div class="text-[11px] font-semibold text-navy-800 border-t border-slate-300/70 pt-2.5 flex justify-between items-center">
+                        <div class="text-[11px] font-semibold text-navy-800 border-t border-slate-300/70 pt-2.5 flex justify-between items-center gap-2">
                             <span>Custom OEM Supply Programs</span>
-                            <button type="button" data-open-query class="hover:underline font-bold cursor-pointer">Enquire &rarr;</button>
+                            <button type="button" data-open-query class="hover:underline font-bold cursor-pointer shrink-0">Enquire &rarr;</button>
                         </div>
                     </div>
 
