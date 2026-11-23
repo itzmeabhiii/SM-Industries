@@ -47,6 +47,74 @@ body.admin-mode > header, body.admin-mode > main, body.admin-mode > footer,
 body.admin-mode > div:not(#admin-panel-modal):not(#admin-login-modal):not(#query-modal),
 body.admin-mode > button[data-open-query] { display:none !important; }
 body.admin-mode { overflow:hidden !important; }
+
+/* Mobile responsive safeguards: prevent any child from widening the viewport. */
+html, body {
+    width: 100%;
+    max-width: 100%;
+}
+body {
+    overflow-x: hidden;
+}
+img, video, iframe, canvas, svg {
+    max-width: 100%;
+}
+input, select, textarea, button {
+    max-width: 100%;
+}
+@media (max-width: 767px) {
+    /* The long address, phone number and email must wrap on narrow screens. */
+    .site-utility-bar,
+    .site-utility-bar > div,
+    .site-utility-details {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+    .site-utility-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+    .site-utility-details > span,
+    .site-utility-details > a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        white-space: normal !important;
+        overflow-wrap: anywhere;
+        word-break: normal;
+        min-width: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+    .site-utility-details > span > span,
+    .site-utility-details > a > span {
+        white-space: normal !important;
+        overflow-wrap: anywhere;
+        min-width: 0;
+    }
+
+    /* Keep page sections and grid/flex children inside the phone viewport. */
+    main, section, header, footer, nav, article, aside {
+        max-width: 100%;
+        min-width: 0;
+    }
+    .max-w-7xl, .max-w-xl, .max-w-md, .max-w-sm {
+        max-width: 100%;
+    }
+    .grid, .flex {
+        min-width: 0;
+    }
+    button, a {
+        overflow-wrap: anywhere;
+    }
+    .site-utility-bar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 </style>
 </head>
 <body class="bg-slate-100 text-slate-800 font-sans antialiased selection:bg-navy-900 selection:text-gold-400 flex flex-col min-h-screen">
@@ -54,10 +122,10 @@ body.admin-mode { overflow:hidden !important; }
     <!-- ==========================================
          1. TOP UTILITY BAR (#0A2E5C)
     =========================================== -->
-    <div class="bg-navy-900 text-white text-xs border-b border-white/10">
+    <div class="site-utility-bar bg-navy-900 text-white text-xs border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col lg:flex-row lg:flex-nowrap justify-start items-center gap-2">
             <!-- Left: Location, Phone, Email -->
-            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start gap-x-3 xl:gap-x-4 gap-y-1 text-slate-200 min-w-0">
+            <div class="site-utility-details flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start gap-x-3 xl:gap-x-4 gap-y-1 text-slate-200 min-w-0">
                 <span class="flex items-center gap-1.5 whitespace-nowrap shrink-0">
                     <i class="fa-solid fa-location-dot text-gold-400"></i>
                     <span>Plot No. A316, Dabua Nawda Road, Near Bharat Gas Agency, NIT, Faridabad, Haryana - 121001</span>
